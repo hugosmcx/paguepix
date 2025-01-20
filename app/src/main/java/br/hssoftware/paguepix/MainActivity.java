@@ -223,4 +223,15 @@ public class MainActivity extends AppCompatActivity {
         InputMethodManager im = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
         im.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
+
+    @Override
+    public void onBackPressed() {
+        if(constraintLayoutFormulario.getVisibility() != View.VISIBLE){
+            constraintLayoutFormulario.setVisibility(View.VISIBLE);
+            constraintLayoutQRCode.setVisibility(View.GONE);
+            constraintLayoutConfiguracao.setVisibility(View.GONE);
+        }else {
+            super.onBackPressed();
+        }
+    }
 }

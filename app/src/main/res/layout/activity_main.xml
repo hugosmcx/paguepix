@@ -26,7 +26,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayoutFormulario"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -80,7 +80,7 @@
                 app:layout_constraintTop_toBottomOf="@id/buttonGerar"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="150dp"
                 android:textColor="#1976D2"
                 android:textSize="16dp"/>
 
@@ -88,7 +88,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayoutQRCode"
-            android:visibility="visible"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
